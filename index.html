@@ -287,16 +287,16 @@
         </div>
 
         <!-- Cute Stickers -->
-        <img src="Images/S1 (1).png" class="cute-sticker" alt="cry bear" />
-        <img src="Images/s3.png" class="cute-sticker" alt="bear heart" />
-        <img src="Images/s2.png" class="cute-sticker" alt="sad bunny" />
+        <img src="S1 (1).png" class="cute-sticker" alt="cry bear" />
+        <img src="s3.png" class="cute-sticker" alt="bear heart" />
+        <img src="s2.png" class="cute-sticker" alt="sad bunny" />
 
         <!-- Buttons -->
         <div class="surprise-btn" onclick="showSurprise()">🙄 Tap for Surprise</div>
 
         <!-- Surprise Popup Image -->
         <div id="surprise-popup">
-            <img src="Images/WhatsApp Image 2025-06-17 at 13.05.19_fac0b5ec.jpg" alt="Surprise" />
+            <img src="WhatsApp Image 2025-06-17 at 13.05.19_fac0b5ec.jpg" alt="Surprise" />
         </div>
         <div class="btn" onclick="forgiveMe()">💬 Forgive Me?</div>
 
@@ -309,28 +309,12 @@
 
         <!-- Background Music -->
         <audio autoplay loop>
-            <source src="music/meow meow.unknown" type="audio/mpeg">
+            <source src="meow meow.unknown" type="audio/mpeg">
         </audio>
     </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script>
-        function showSurprise() {
-            document.getElementById("surprise-popup").style.display = "block";
-
-            // Balloons effect
-            for (let i = 0; i < 20; i++) {
-                const balloon = document.createElement('div');
-                balloon.className = 'balloon';
-                balloon.style.left = Math.random() * 100 + 'vw';
-                balloon.style.animationDelay = Math.random() * 4 + 's';
-                document.getElementById('balloons').appendChild(balloon);
-                setTimeout(() => balloon.remove(), 6000);
-            }
-        }
-
-    </script>
     <script>
         // Floating hearts
         for (let i = 0; i < 25; i++) {
